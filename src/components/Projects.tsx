@@ -1,0 +1,177 @@
+import { Card } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { 
+  ExternalLink, 
+  Github, 
+  BookOpen, 
+  Globe, 
+  BarChart3, 
+  Brain,
+  ShoppingCart,
+  Shuffle
+} from 'lucide-react';
+
+const Projects = () => {
+  const projects = [
+    {
+      title: "Blog Website",
+      description: "A full-featured personal blog with user authentication, rich text editor, and responsive design. Built with modern web technologies for optimal performance.",
+      icon: <BookOpen className="h-6 w-6" />,
+      tags: ["React", "Node.js", "MongoDB", "Authentication"],
+      category: "Web Development",
+      gradient: "from-blue-500 to-purple-600"
+    },
+    {
+      title: "Orrery Solar System Simulation",
+      description: "Interactive 3D visualization of planetary orbits with real astronomical data. Features accurate celestial mechanics and stunning visual effects.",
+      icon: <Globe className="h-6 w-6" />,
+      tags: ["JavaScript", "Three.js", "WebGL", "Animation"],
+      category: "Visualization",
+      gradient: "from-orange-500 to-red-500"
+    },
+    {
+      title: "Course Store Data Analysis",
+      description: "Comprehensive analysis of online course marketplace data, providing insights on pricing strategies, popular categories, and market trends.",
+      icon: <BarChart3 className="h-6 w-6" />,
+      tags: ["Python", "Pandas", "Matplotlib", "Power BI"],
+      category: "Data Analysis",
+      gradient: "from-green-500 to-cyan-500"
+    },
+    {
+      title: "Store Data ML Predictor",
+      description: "End-to-end machine learning pipeline for retail data analysis, including data cleaning, feature engineering, and predictive modeling.",
+      icon: <Brain className="h-6 w-6" />,
+      tags: ["Python", "Scikit-learn", "TensorFlow", "Data Preprocessing"],
+      category: "Machine Learning",
+      gradient: "from-purple-500 to-pink-500"
+    },
+    {
+      title: "E-commerce Application",
+      description: "Full-stack e-commerce platform with inventory management, payment processing, and admin dashboard. Built using Java and modern frameworks.",
+      icon: <ShoppingCart className="h-6 w-6" />,
+      tags: ["Java", "Spring Boot", "MySQL", "REST API"],
+      category: "Full-Stack",
+      gradient: "from-indigo-500 to-blue-600"
+    },
+    {
+      title: "Sorting Algorithms Visualizer",
+      description: "Interactive C++ application that visualizes various sorting algorithms in real-time, helping users understand algorithmic complexity and performance.",
+      icon: <Shuffle className="h-6 w-6" />,
+      tags: ["C++", "Qt", "Algorithms", "Visualization"],
+      category: "Desktop Application",
+      gradient: "from-teal-500 to-green-600"
+    }
+  ];
+
+  return (
+    <section id="projects" className="py-20">
+      <div className="container mx-auto px-4">
+        <div className="max-w-6xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Featured <span className="text-gradient">Projects</span>
+            </h2>
+            <div className="w-24 h-1 bg-accent-gradient mx-auto mb-8"></div>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              A showcase of my recent work spanning web development, data analysis, 
+              machine learning, and software engineering.
+            </p>
+          </div>
+
+          {/* Projects Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
+              <Card 
+                key={index}
+                className="group hover:shadow-elegant transition-all duration-300 project-card border-accent/20 hover:border-accent/40 overflow-hidden relative"
+              >
+                {/* Background Gradient */}
+                <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${project.gradient} opacity-10 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-500`}></div>
+                
+                <div className="p-6 relative z-10">
+                  {/* Category Badge */}
+                  <Badge 
+                    variant="secondary" 
+                    className="mb-4 text-xs font-medium bg-accent/10 text-accent border-accent/20"
+                  >
+                    {project.category}
+                  </Badge>
+                  
+                  {/* Icon & Title */}
+                  <div className="flex items-center mb-4">
+                    <div className="text-accent mr-3 group-hover:scale-110 transition-transform duration-300">
+                      {project.icon}
+                    </div>
+                    <h3 className="text-xl font-semibold text-foreground">
+                      {project.title}
+                    </h3>
+                  </div>
+                  
+                  {/* Description */}
+                  <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
+                    {project.description}
+                  </p>
+                  
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {project.tags.map((tag, tagIndex) => (
+                      <span 
+                        key={tagIndex}
+                        className="px-2 py-1 bg-secondary text-secondary-foreground rounded text-xs font-medium"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  
+                  {/* Action Buttons */}
+                  <div className="flex gap-3">
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      className="flex-1 group/btn border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground"
+                    >
+                      <Github className="mr-2 h-4 w-4 group-hover/btn:rotate-12 transition-transform duration-300" />
+                      Code
+                    </Button>
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      className="flex-1 group/btn border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground"
+                    >
+                      <ExternalLink className="mr-2 h-4 w-4 group-hover/btn:scale-110 transition-transform duration-300" />
+                      Demo
+                    </Button>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-16">
+            <h3 className="text-2xl font-semibold mb-4 text-foreground">
+              Want to See More?
+            </h3>
+            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
+              These are just a few highlights from my portfolio. Check out my GitHub 
+              for more projects and contributions to open-source initiatives.
+            </p>
+            <Button 
+              variant="outline"
+              size="lg"
+              className="border-accent text-accent hover:bg-accent hover:text-accent-foreground px-8 py-3"
+            >
+              <Github className="mr-2 h-5 w-5" />
+              View All Projects
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
