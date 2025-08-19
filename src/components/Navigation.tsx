@@ -34,7 +34,7 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
-      isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-elegant' : 'bg-transparent'
+      isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-elegant' : 'bg-background/80 backdrop-blur-sm'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
@@ -57,13 +57,6 @@ const Navigation = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent-gradient transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
-            <Button 
-              onClick={() => scrollToSection('contact')} 
-              variant="default"
-              className="hero-gradient hover:shadow-glow transition-all duration-300"
-            >
-              Get In Touch
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -90,13 +83,6 @@ const Navigation = () => {
                   {item.label}
                 </button>
               ))}
-              <Button 
-                onClick={() => scrollToSection('contact')} 
-                variant="default"
-                className="hero-gradient mt-4"
-              >
-                Get In Touch
-              </Button>
             </div>
           </div>
         )}

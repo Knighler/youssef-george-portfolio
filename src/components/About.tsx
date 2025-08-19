@@ -37,7 +37,7 @@ const About = () => {
             <div className="w-24 h-1 bg-accent-gradient mx-auto mb-8"></div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-4xl mx-auto">
             {/* Text Content */}
             <div className="space-y-6">
               <h3 className="text-2xl md:text-3xl font-semibold text-foreground">
@@ -65,25 +65,6 @@ const About = () => {
               </p>
             </div>
 
-            {/* Highlights Grid */}
-            <div className="grid sm:grid-cols-2 gap-6">
-              {highlights.map((highlight, index) => (
-                <Card 
-                  key={index} 
-                  className="p-6 hover:shadow-elegant transition-all duration-300 border-accent/20 hover:border-accent/40 group"
-                >
-                  <div className="text-accent mb-4 group-hover:scale-110 transition-transform duration-300">
-                    {highlight.icon}
-                  </div>
-                  <h4 className="font-semibold mb-2 text-foreground">
-                    {highlight.title}
-                  </h4>
-                  <p className="text-sm text-muted-foreground">
-                    {highlight.description}
-                  </p>
-                </Card>
-              ))}
-            </div>
           </div>
         </div>
       </div>

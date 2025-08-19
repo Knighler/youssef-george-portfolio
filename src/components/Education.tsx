@@ -157,35 +157,6 @@ const Education = () => {
             </div>
           </div>
 
-          {/* Additional Learning */}
-          <div className="mt-16 text-center">
-            <h3 className="text-2xl font-semibold mb-8 text-foreground">
-              Continuous Learning
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card className="p-6 text-center border-accent/20">
-                <BookOpen className="h-8 w-8 text-accent mx-auto mb-4" />
-                <h4 className="font-semibold mb-2">Online Courses</h4>
-                <p className="text-sm text-muted-foreground">
-                  Coursera, edX, Udemy platforms for latest technologies
-                </p>
-              </Card>
-              <Card className="p-6 text-center border-accent/20">
-                <Award className="h-8 w-8 text-accent mx-auto mb-4" />
-                <h4 className="font-semibold mb-2">Competitions</h4>
-                <p className="text-sm text-muted-foreground">
-                  Programming contests and hackathons participation
-                </p>
-              </Card>
-              <Card className="p-6 text-center border-accent/20">
-                <GraduationCap className="h-8 w-8 text-accent mx-auto mb-4" />
-                <h4 className="font-semibold mb-2">Research</h4>
-                <p className="text-sm text-muted-foreground">
-                  Independent research in AI and machine learning
-                </p>
-              </Card>
-            </div>
-          </div>
         </div>
       </div>
     </section>

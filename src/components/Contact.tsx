@@ -49,12 +49,6 @@ const Contact = () => {
 
   const quickActions = [
     {
-      title: "Schedule a Call",
-      description: "Book a 30-minute consultation",
-      icon: <MessageCircle className="h-5 w-5" />,
-      action: "Schedule Now"
-    },
-    {
       title: "Download Resume",
       description: "Get my latest CV in PDF format",
       icon: <Send className="h-5 w-5" />,
@@ -78,9 +72,9 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-12">
+          <div>
             {/* Contact Methods */}
-            <div className="lg:col-span-2">
+            <div>
               <h3 className="text-2xl font-semibold mb-8 text-foreground">
                 Get In Touch
               </h3>
@@ -128,11 +122,11 @@ const Contact = () => {
               </div>
 
               {/* Quick Actions */}
-              <div className="grid sm:grid-cols-2 gap-6">
+              <div className="flex justify-center">
                 {quickActions.map((action, index) => (
                   <Card 
                     key={index}
-                    className="p-6 text-center group hover:shadow-elegant transition-all duration-300 border-accent/20 hover:border-accent/40"
+                    className="p-6 text-center group hover:shadow-elegant transition-all duration-300 border-accent/20 hover:border-accent/40 max-w-sm"
                   >
                     <div className="text-accent mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
                       {action.icon}
@@ -153,45 +147,6 @@ const Contact = () => {
                   </Card>
                 ))}
               </div>
-            </div>
-
-            {/* Contact Info Sidebar */}
-            <div>
-              <Card className="p-6 border-accent/20">
-                <h3 className="text-xl font-semibold mb-6 text-foreground">
-                  Let's Work Together
-                </h3>
-                
-                <div className="space-y-4 mb-6">
-                  <div className="flex items-center text-muted-foreground">
-                    <MapPin className="h-4 w-4 text-accent mr-3" />
-                    <span className="text-sm">Cairo, Egypt</span>
-                  </div>
-                  <div className="flex items-center text-muted-foreground">
-                    <MessageCircle className="h-4 w-4 text-accent mr-3" />
-                    <span className="text-sm">Available for remote work</span>
-                  </div>
-                </div>
-                
-                <div className="bg-accent/5 rounded-lg p-4 mb-6">
-                  <h4 className="font-medium text-foreground mb-2">
-                    Current Status
-                  </h4>
-                  <p className="text-sm text-muted-foreground">
-                    🎓 Studying Computer & AI Engineering<br/>
-                    💼 Open to internships and freelance projects<br/>
-                    🚀 Available for immediate start
-                  </p>
-                </div>
-                
-                <Button 
-                  className="w-full hero-gradient hover:shadow-glow transition-all duration-300"
-                  size="lg"
-                >
-                  <Send className="mr-2 h-4 w-4" />
-                  Start a Conversation
-                </Button>
-              </Card>
             </div>
           </div>
 

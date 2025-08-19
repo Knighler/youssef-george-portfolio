@@ -95,18 +95,6 @@ const Skills = () => {
                   {skill.name}
                 </h3>
                 
-                {/* Progress Bar */}
-                <div className="w-full bg-secondary rounded-full h-2 mb-2">
-                  <div 
-                    className={`h-2 rounded-full bg-gradient-to-r ${skill.color} transition-all duration-1000 ease-out`}
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
-                </div>
-                
-                {/* Percentage */}
-                <span className="text-sm text-muted-foreground font-medium">
-                  {skill.level}%
-                </span>
               </Card>
             ))}
           </div>
