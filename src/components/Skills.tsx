@@ -106,8 +106,8 @@ const Skills = () => {
             </h3>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                "React", "Node.js", "Git", "Docker", "AWS", "MongoDB", 
-                "TensorFlow", "Pandas", "NumPy", "Matplotlib", "Jupyter"
+                "React", "Node.js", "Git",  "AWS", 
+                 "Pandas", "NumPy", "Matplotlib"
               ].map((tech, index) => (
                 <span 
                   key={index}
