@@ -15,7 +15,7 @@ const Hero = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        style={{ backgroundImage: `url(${Profile_Pic.jpeg})` }}
       />
       
       {/* Gradient Overlay */}
@@ -57,13 +57,7 @@ const Hero = () => {
           </div>
         </div>
         
-        {/* Scroll Indicator */}
-        <button
-          onClick={() => scrollToSection('about')}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white hover:text-white/70 transition-smooth animate-float"
-        >
-          <ArrowDown size={32} />
-        </button>
+        
       </div>
     </section>
   );
