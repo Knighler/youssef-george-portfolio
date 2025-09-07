@@ -25,7 +25,7 @@ const Hero = () => {
           <img
   src={profilePic}
   alt="Profile picture"
-  className="w-70 h-70 mx-auto rounded-full border-4 border-white shadow-lg mb-6"
+  className="w-50 h-50 mx-auto rounded-full border-4 border-white shadow-lg mb-6"
 />
 
          
