@@ -46,7 +46,7 @@ const Projects = () => {
     },
     {
       title: "Companies Layoffs Data Analysis",
-      description: "Comprehensive analysis of Layoffs and funds raised for different companies.",
+      description: "Comprehensive analysis of Layoffs and funds raised for different companies, which provides crucial insights for taking important decisions",
       icon: <BarChart3 className="h-6 w-6" />,
       tags: [ "Power BI"],
       category: "Data Analysis",
