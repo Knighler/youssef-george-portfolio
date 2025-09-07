@@ -12,6 +12,8 @@ import {
   Shuffle
 } from 'lucide-react';
 import { useState } from 'react';
+import onlineCoursesImg from "@/assets/online-courses.png";
+import layoffsImg from "@/assets/layoffs.png";
 
 // Simple modal for showing images
 const ImageModal = ({ isOpen, onClose, image }) => {
@@ -42,7 +44,7 @@ const Projects = () => {
       tags: [ "Power BI"],
       category: "Data Analysis",
       gradient: "from-green-500 to-cyan-500",
-      demoImage: "/images/online-courses.png" // image for popup
+      demoImage: onlineCoursesImg // image for popup
     },
     {
       title: "Companies Layoffs Data Analysis",
@@ -51,7 +53,7 @@ const Projects = () => {
       tags: [ "Power BI"],
       category: "Data Analysis",
       gradient: "from-green-500 to-cyan-500",
-      demoImage: "/images/layoffs.png" // image for popup
+      demoImage: layoffsImg// image for popup
     },
     {
       title: "Blog Website",
@@ -60,35 +62,27 @@ const Projects = () => {
       tags: ["React", "Node.js", "MongoDB", "Authentication"],
       category: "Web Development",
       gradient: "from-blue-500 to-purple-600",
-      codeLink: "https://github.com/yourusername/blog-website"
+      codeLink: "https://github.com/Knighler/Blog_Custom_API"
     },
     {
       title: "Orrery Solar System Simulation",
       description: "Interactive 3D visualization of planetary orbits with real astronomical data. Features accurate celestial mechanics and stunning visual effects.",
       icon: <Globe className="h-6 w-6" />,
-      tags: ["JavaScript", "Three.js", "WebGL", "Animation"],
+      tags: ["JavaScript", "HTML", "CSS"],
       category: "Visualization",
       gradient: "from-orange-500 to-red-500",
-      codeLink: "https://github.com/yourusername/orrery-simulation"
+      codeLink: "https://github.com/Knighler/Orerry"
     },
-    {
-      title: "E-commerce Application",
-      description: "Full-stack e-commerce platform with inventory management, payment processing, and admin dashboard. Built using Java and modern frameworks.",
-      icon: <ShoppingCart className="h-6 w-6" />,
-      tags: ["Java", "Spring Boot", "MySQL", "REST API"],
-      category: "Full-Stack",
-      gradient: "from-indigo-500 to-blue-600",
-      codeLink: "https://github.com/yourusername/ecommerce-app"
-    },
-    {
-      title: "Sorting Algorithms Visualizer",
-      description: "Interactive C++ application that visualizes various sorting algorithms in real-time, helping users understand algorithmic complexity and performance.",
-      icon: <Shuffle className="h-6 w-6" />,
-      tags: ["C++", "Qt", "Algorithms", "Visualization"],
-      category: "Desktop Application",
-      gradient: "from-teal-500 to-green-600",
-      codeLink: "https://github.com/yourusername/sorting-visualizer"
+     {
+      title: "Travel Tracker App",
+      description: "Interactive websites where differetn users can use a map to to highlight the places they visted around the worls. Users can sign in with different accounts and each can have a customized page",
+      icon: <Globe className="h-6 w-6" />,
+      tags: ["JavaScript", "Animation","HTML","CSS"],
+      category: "Web Development",
+      gradient: "from-orange-500 to-red-500",
+      codeLink: "https://github.com/Knighler/Travel_Tracker_Map"
     }
+   
   ];
 
   return (
