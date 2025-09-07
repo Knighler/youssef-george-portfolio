@@ -45,24 +45,11 @@ const About = () => {
               </h3>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                As a sophomore studying Computer & AI Engineering at Cairo University, 
-                I'm dedicated to building innovative solutions that bridge the gap between 
-                artificial intelligence and real-world applications.
+                I believe perseverance is key to solving complex problems. From tackling demanding university projects to building real-world applications, I’ve learned to approach every challenge with determination and focus. My goal is not just to find a solution, but to deliver a high-quality outcome that makes a real impact. With a passion for AI, data analysis, and software engineering, I combine technical expertise and persistence to transform obstacles into opportunities.
               </p>
               
-              <div className="bg-accent/10 border-l-4 border-accent p-6 rounded-r-lg">
-                <p className="text-lg font-medium text-accent-foreground italic">
-                  "I combine AI engineering knowledge with strong problem-solving and 
-                  data analysis skills to build impactful digital solutions."
-                </p>
-              </div>
-              
-              <p className="text-muted-foreground">
-                Currently expanding my expertise through hands-on projects, internships, 
-                and continuous learning. I'm particularly interested in the intersection 
-                of AI, data science, and software engineering, where I can leverage 
-                cutting-edge technologies to solve complex problems.
-              </p>
+             
+
             </div>
 
           </div>
