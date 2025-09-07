@@ -13,11 +13,11 @@ const Education = () => {
   const education = [
     {
       type: "degree",
-      institution: "Cairo University",
+      institution: "Ain Shams University",
       degree: "Bachelor of Computer & AI Engineering",
       period: "2023 - 2027",
-      status: "Currently Sophomore",
       location: "Cairo, Egypt",
+      status:"Junior",
       description: "Focusing on artificial intelligence, machine learning, software engineering, and data structures. Actively involved in programming competitions and research projects.",
       highlights: [
         "Relevant Coursework: Data Structures, Algorithms, AI Fundamentals",
@@ -34,10 +34,10 @@ const Education = () => {
       type: "internship",
       title: "DEPI Data Analysis Internship",
       organization: "Digital Egypt Pioneers Initiative",
-      period: "2024",
-      status: "Completed",
+      period: "2025",
+      status:"In Progress",
       description: "Intensive hands-on training in data analysis, visualization, and business intelligence tools.",
-      skills: ["Python", "SQL", "Power BI", "Excel", "Statistical Analysis"],
+      skills: [ "Power BI", "Excel", "Statistical Analysis"],
       icon: <Briefcase className="h-6 w-6" />,
       gradient: "from-green-500 to-cyan-500"
     },
@@ -45,7 +45,7 @@ const Education = () => {
       type: "certification",
       title: "AWS Cloud Associate",
       organization: "Amazon Web Services",
-      period: "2024",
+      period: "2025",
       status: "In Progress",
       description: "Comprehensive cloud computing certification covering AWS services, architecture, and best practices.",
       skills: ["Cloud Computing", "AWS Services", "DevOps", "Infrastructure"],
