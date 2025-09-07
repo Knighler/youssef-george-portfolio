@@ -15,7 +15,7 @@ const Hero = () => {
       id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
-      {/* Background Gradient */}
+      {/* Gradient Overlay */}
       <div className="absolute inset-0 hero-gradient opacity-90" />
 
       {/* Content */}
@@ -24,8 +24,8 @@ const Hero = () => {
           {/* Profile Image */}
           <img
             src={profilePic}
-            alt="Profile"
-            className="w-40 h-40 mx-auto rounded-full border-4 border-white shadow-lg mb-6 opacity-0 animate-fade-in"
+            alt="Profile picture"
+            className="w-40 h-40 mx-auto rounded-full border-4 border-white shadow-lg mb-6"
           />
 
           {/* Name */}
@@ -40,13 +40,13 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto opacity-0 animate-fade-in [animation-delay:0.4s]">
-            I combine AI engineering knowledge with strong problem-solving and data analysis skills
+            I combine AI engineering knowledge with strong problem-solving and data analysis skills 
             to build impactful digital solutions.
           </p>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 animate-fade-in [animation-delay:0.6s]">
-            <Button
+            <Button 
               onClick={() => scrollToSection('projects')}
               size="lg"
               className="bg-white text-primary hover:bg-white/90 hover:shadow-glow transition-all duration-300 px-8 py-3 text-lg"
@@ -54,7 +54,7 @@ const Hero = () => {
               View My Work
             </Button>
 
-            <Button
+            <Button 
               variant="outline"
               size="lg"
               className="border-white text-white hover:bg-white hover:text-primary transition-all duration-300 px-8 py-3 text-lg"
