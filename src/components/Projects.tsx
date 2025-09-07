@@ -11,16 +11,56 @@ import {
   ShoppingCart,
   Shuffle
 } from 'lucide-react';
+import { useState } from 'react';
+
+// Simple modal for showing images
+const ImageModal = ({ isOpen, onClose, image }) => {
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+      <div className="relative bg-white p-4 rounded-xl max-w-3xl">
+        <img src={image} alt="Project demo" className="max-h-[80vh] rounded-lg" />
+        <button 
+          onClick={onClose} 
+          className="absolute top-2 right-2 text-white bg-red-500 rounded-full px-3 py-1"
+        >
+          ✕
+        </button>
+      </div>
+    </div>
+  );
+};
 
 const Projects = () => {
+  const [modalImage, setModalImage] = useState(null);
+
   const projects = [
+    {
+      title: "Online Courses Store Data Analysis",
+      description: "Comprehensive analysis of online course marketplace data, providing insights on pricing strategies, popular categories, and market trends.",
+      icon: <BarChart3 className="h-6 w-6" />,
+      tags: [ "Power BI"],
+      category: "Data Analysis",
+      gradient: "from-green-500 to-cyan-500",
+      demoImage: "/images/online-courses.png" // image for popup
+    },
+    {
+      title: "Companies Layoffs Data Analysis",
+      description: "Comprehensive analysis of Layoffs and funds raised for different companies.",
+      icon: <BarChart3 className="h-6 w-6" />,
+      tags: [ "Power BI"],
+      category: "Data Analysis",
+      gradient: "from-green-500 to-cyan-500",
+      demoImage: "/images/layoffs.png" // image for popup
+    },
     {
       title: "Blog Website",
       description: "A full-featured personal blog with user authentication, rich text editor, and responsive design. Built with modern web technologies for optimal performance.",
       icon: <BookOpen className="h-6 w-6" />,
       tags: ["React", "Node.js", "MongoDB", "Authentication"],
       category: "Web Development",
-      gradient: "from-blue-500 to-purple-600"
+      gradient: "from-blue-500 to-purple-600",
+      codeLink: "https://github.com/yourusername/blog-website"
     },
     {
       title: "Orrery Solar System Simulation",
@@ -28,23 +68,8 @@ const Projects = () => {
       icon: <Globe className="h-6 w-6" />,
       tags: ["JavaScript", "Three.js", "WebGL", "Animation"],
       category: "Visualization",
-      gradient: "from-orange-500 to-red-500"
-    },
-    {
-      title: "Course Store Data Analysis",
-      description: "Comprehensive analysis of online course marketplace data, providing insights on pricing strategies, popular categories, and market trends.",
-      icon: <BarChart3 className="h-6 w-6" />,
-      tags: ["Python", "Pandas", "Matplotlib", "Power BI"],
-      category: "Data Analysis",
-      gradient: "from-green-500 to-cyan-500"
-    },
-    {
-      title: "Store Data ML Predictor",
-      description: "End-to-end machine learning pipeline for retail data analysis, including data cleaning, feature engineering, and predictive modeling.",
-      icon: <Brain className="h-6 w-6" />,
-      tags: ["Python", "Scikit-learn", "TensorFlow", "Data Preprocessing"],
-      category: "Machine Learning",
-      gradient: "from-purple-500 to-pink-500"
+      gradient: "from-orange-500 to-red-500",
+      codeLink: "https://github.com/yourusername/orrery-simulation"
     },
     {
       title: "E-commerce Application",
@@ -52,7 +77,8 @@ const Projects = () => {
       icon: <ShoppingCart className="h-6 w-6" />,
       tags: ["Java", "Spring Boot", "MySQL", "REST API"],
       category: "Full-Stack",
-      gradient: "from-indigo-500 to-blue-600"
+      gradient: "from-indigo-500 to-blue-600",
+      codeLink: "https://github.com/yourusername/ecommerce-app"
     },
     {
       title: "Sorting Algorithms Visualizer",
@@ -60,7 +86,8 @@ const Projects = () => {
       icon: <Shuffle className="h-6 w-6" />,
       tags: ["C++", "Qt", "Algorithms", "Visualization"],
       category: "Desktop Application",
-      gradient: "from-teal-500 to-green-600"
+      gradient: "from-teal-500 to-green-600",
+      codeLink: "https://github.com/yourusername/sorting-visualizer"
     }
   ];
 
@@ -87,7 +114,6 @@ const Projects = () => {
                 key={index}
                 className="group hover:shadow-elegant transition-all duration-300 project-card border-accent/20 hover:border-accent/40 overflow-hidden relative"
               >
-                {/* Background Gradient */}
                 <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${project.gradient} opacity-10 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-500`}></div>
                 
                 <div className="p-6 relative z-10">
@@ -128,22 +154,30 @@ const Projects = () => {
                   
                   {/* Action Buttons */}
                   <div className="flex gap-3">
-                    <Button 
-                      variant="outline" 
-                      size="sm"
-                      className="flex-1 group/btn border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground"
-                    >
-                      <Github className="mr-2 h-4 w-4 group-hover/btn:rotate-12 transition-transform duration-300" />
-                      Code
-                    </Button>
-                    <Button 
-                      variant="outline" 
-                      size="sm"
-                      className="flex-1 group/btn border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground"
-                    >
-                      <ExternalLink className="mr-2 h-4 w-4 group-hover/btn:scale-110 transition-transform duration-300" />
-                      Demo
-                    </Button>
+                    {project.demoImage && (
+                      <Button 
+                        variant="outline" 
+                        size="sm"
+                        onClick={() => setModalImage(project.demoImage)}
+                        className="flex-1 group/btn border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground"
+                      >
+                        <ExternalLink className="mr-2 h-4 w-4 group-hover/btn:scale-110 transition-transform duration-300" />
+                        Demo
+                      </Button>
+                    )}
+                    {project.codeLink && (
+                      <Button 
+                        variant="outline" 
+                        size="sm"
+                        asChild
+                        className="flex-1 group/btn border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground"
+                      >
+                        <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
+                          <Github className="mr-2 h-4 w-4 group-hover/btn:rotate-12 transition-transform duration-300" />
+                          Code
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 </div>
               </Card>
@@ -170,6 +204,13 @@ const Projects = () => {
           </div>
         </div>
       </div>
+
+      {/* Image Modal */}
+      <ImageModal 
+        isOpen={!!modalImage} 
+        onClose={() => setModalImage(null)} 
+        image={modalImage} 
+      />
     </section>
   );
 };
