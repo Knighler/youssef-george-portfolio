@@ -46,19 +46,8 @@ const Services = () => {
         "AI integration solutions"
       ],
       gradient: "from-purple-500 to-pink-400"
-    },
-    {
-      icon: <GraduationCap className="h-8 w-8" />,
-      title: "Consulting & Tutoring",
-      description: "Share knowledge and provide guidance in programming, data science, and AI technologies.",
-      features: [
-        "One-on-one tutoring sessions",
-        "Code review and optimization",
-        "Technology consulting",
-        "Career guidance in tech"
-      ],
-      gradient: "from-orange-500 to-red-400"
     }
+   
   ];
 
   const scrollToContact = () => {
