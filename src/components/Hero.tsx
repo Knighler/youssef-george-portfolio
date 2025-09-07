@@ -22,11 +22,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
-          <img
-            src={profilePic}
-            alt="Profile picture"
-            className="w-50 h-50 mx-auto rounded-full border-4 border-white shadow-lg mb-6"
-          />
+         
 
           {/* Name */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 opacity-0 animate-fade-in">
