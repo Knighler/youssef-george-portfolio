@@ -22,6 +22,12 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
+          <img
+  src={profilePic}
+  alt="Profile picture"
+  className="w-40 h-40 mx-auto rounded-full border-4 border-white shadow-lg mb-6"
+/>
+
          
 
           {/* Name */}
