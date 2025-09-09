@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 import { useState } from 'react';
 import onlineCoursesImg from "@/assets/onlineCourseImg.png";
-import layoffsImg from "@/assets/layoffsiImg.png";
+import layoffsImg from "@/assets/layoffsImg.png";
 
 // Simple modal for showing images
 const ImageModal = ({ isOpen, onClose, image }) => {
