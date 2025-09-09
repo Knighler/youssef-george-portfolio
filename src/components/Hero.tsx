@@ -58,7 +58,7 @@ const Hero = () => {
 
             <Button 
               <a 
-  href="/resume.pdf" 
+  href="/Youssef_Geroge_Nabil.pdf" 
   download 
   className="border-white text-white hover:bg-white hover:text-primary transition-all duration-300 px-8 py-3 text-lg rounded-lg flex items-center"
 >
