@@ -16,7 +16,7 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      value: "youssefgngs@gmail.com@gmail.com",
+      value: "youssefgngs@gmail.com@",
       href: "mailto:youssefgngs@gmail.com",
       description: "For project inquiries and collaborations",
       color: "from-red-500 to-orange-500"
