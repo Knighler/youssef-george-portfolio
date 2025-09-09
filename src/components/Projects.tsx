@@ -12,8 +12,8 @@ import {
   Shuffle
 } from 'lucide-react';
 import { useState } from 'react';
-import onlineCoursesImg from "@/assets/online-courses.png";
-import layoffsImg from "@/assets/layoffs.png";
+import onlineCoursesImg from "@/assets/onlineCourseImg.png";
+import layoffsImg from "@/assets/layoffsiImg.png";
 
 // Simple modal for showing images
 const ImageModal = ({ isOpen, onClose, image }) => {
