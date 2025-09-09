@@ -188,13 +188,20 @@ const Projects = () => {
               for more projects and contributions to open-source initiatives.
             </p>
             <Button 
-              variant="outline"
-              size="lg"
-              className="border-accent text-accent hover:bg-accent hover:text-accent-foreground px-8 py-3"
-            >
-              <Github className="mr-2 h-5 w-5" />
-              View All Projects
-            </Button>
+  variant="outline"
+  size="lg"
+  asChild
+  className="border-accent text-accent hover:bg-accent hover:text-accent-foreground px-8 py-3"
+>
+  <a 
+    href="https://github.com/Knighler" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <Github className="mr-2 h-5 w-5" />
+    View All Projects
+  </a>
+</Button>
           </div>
         </div>
       </div>
