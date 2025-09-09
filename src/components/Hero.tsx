@@ -57,12 +57,14 @@ const Hero = () => {
             </Button>
 
             <Button 
-              variant="outline"
-              size="lg"
-              className="border-white text-white hover:bg-white hover:text-primary transition-all duration-300 px-8 py-3 text-lg"
-            >
-              <Download className="mr-2 h-5 w-5" />
-              Download Resume
+              <a 
+  href="/resume.pdf" 
+  download 
+  className="border-white text-white hover:bg-white hover:text-primary transition-all duration-300 px-8 py-3 text-lg rounded-lg flex items-center"
+>
+  <Download className="mr-2 h-5 w-5" />
+  Download Resume
+</a>
             </Button>
           </div>
         </div>
