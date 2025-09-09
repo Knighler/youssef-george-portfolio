@@ -16,35 +16,36 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      value: "youssef.george@email.com",
-      href: "mailto:youssef.george@email.com",
+      value: "youssefgngs@gmail.com@gmail.com",
+      href: "mailto:youssefgngs@gmail.com",
       description: "For project inquiries and collaborations",
       color: "from-red-500 to-orange-500"
     },
     {
       icon: <Linkedin className="h-6 w-6" />,
       title: "LinkedIn",
-      value: "linkedin.com/in/youssef-george",
-      href: "https://linkedin.com/in/youssef-george",
+      value: "www.linkedin.com/in/youssef-george-9372622b2",
+      href: "www.linkedin.com/in/youssef-george-9372622b2",
       description: "Professional networking and career opportunities",
       color: "from-blue-600 to-blue-400"
     },
     {
       icon: <Github className="h-6 w-6" />,
       title: "GitHub",
-      value: "github.com/youssef-george",
-      href: "https://github.com/youssef-george",
+      value: "github.com/Knighler",
+      href: "https://github.com/Knighler",
       description: "Open source projects and code repositories",
       color: "from-gray-700 to-gray-500"
     },
-    {
-      icon: <Phone className="h-6 w-6" />,
-      title: "Phone",
-      value: "+20 XXX XXX XXXX",
-      href: "tel:+20XXXXXXXXX",
-      description: "For urgent matters and direct communication",
-      color: "from-green-500 to-emerald-500"
+     {
+    icon: <Phone className="h-6 w-6" />,
+    title: "WhatsApp",
+    value: "+20 1011487095",
+    href: "https://wa.me/201011487095",  // ✅ WhatsApp link
+    description: "Chat with me directly on WhatsApp",
+    color: "from-green-500 to-emerald-500"
     }
+
   ];
 
   const quickActions = [
@@ -137,13 +138,17 @@ const Contact = () => {
                     <p className="text-muted-foreground text-sm mb-4">
                       {action.description}
                     </p>
-                    <Button 
+                   <Button 
+                      asChild
                       variant="outline"
                       size="sm"
                       className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground"
                     >
-                      {action.action}
+                      <a href="/Youssef_George_Resume.pdf" download>
+                        {action.action}
+                      </a>
                     </Button>
+
                   </Card>
                 ))}
               </div>
