@@ -24,7 +24,7 @@ const Contact = () => {
     {
       icon: <Linkedin className="h-6 w-6" />,
       title: "LinkedIn",
-      value: "https://www.linkedin.com/in/youssef-george-9372622b2/",
+      value: "linkedin.com/in/youssef-george-9372622b2/",
       href: "https://www.linkedin.com/in/youssef-george-9372622b2/",
       description: "Professional networking and career opportunities",
       color: "from-blue-600 to-blue-400"
