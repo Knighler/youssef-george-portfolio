@@ -24,8 +24,8 @@ const Contact = () => {
     {
       icon: <Linkedin className="h-6 w-6" />,
       title: "LinkedIn",
-      value: "linkedin.com/in/youssef-george-9372622b2/",
-      href: "https://www.linkedin.com/in/youssef-george-9372622b2/",
+      value: "https://www.linkedin.com/in/youssef-george05/",
+      href: "https://www.linkedin.com/in/youssef-george05/",
       description: "Professional networking and career opportunities",
       color: "from-blue-600 to-blue-400"
     },
@@ -37,6 +37,7 @@ const Contact = () => {
       description: "Open source projects and code repositories",
       color: "from-gray-700 to-gray-500"
     },
+   
      {
     icon: <Phone className="h-6 w-6" />,
     title: "WhatsApp",
@@ -144,7 +145,7 @@ const Contact = () => {
                       size="sm"
                       className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground"
                     >
-                      <a href="/Youssef_George_Resume.pdf" download>
+                      <a href="/Youssef_George_CV.pdf" download>
                         {action.action}
                       </a>
                     </Button>

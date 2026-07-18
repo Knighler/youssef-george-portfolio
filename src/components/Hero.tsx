@@ -35,15 +35,11 @@ const Hero = () => {
             Youssef George
           </h1>
 
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-white/90 mb-8 opacity-0 animate-fade-in [animation-delay:0.2s]">
-            AI & Software Engineering Student | Future Data Innovator
-          </p>
-
           {/* Description */}
-          <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto opacity-0 animate-fade-in [animation-delay:0.4s]">
-            I combine AI engineering knowledge with strong problem-solving and data analysis skills 
-            to build impactful digital solutions.
+          <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto opacity-0 animate-fade-in [animation-delay:0.4s]">
+            AI & Software Engineering student focused on machine learning, natural language processing,
+            and full-stack development. Experienced with research-grade ML workflows and production
+            web applications.
           </p>
 
           {/* Buttons */}
@@ -57,10 +53,7 @@ const Hero = () => {
             </Button>
 
             <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary transition-all duration-300 px-8 py-3 text-lg">
-  <a href="/Youssef_George_Resume.pdf" download>
-    <Download className="mr-2 h-5 w-5" />
-    Download Resume
-  </a>
+  
 </Button>
 
           </div>

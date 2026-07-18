@@ -18,11 +18,12 @@ const Education = () => {
       period: "2023 - 2027",
       location: "Cairo, Egypt",
       status:"Junior",
+      gpa: "3.8",
       description: "Focusing on artificial intelligence, machine learning, software engineering, and data structures. Actively involved in programming competitions and research projects.",
       highlights: [
-        "Relevant Coursework: Data Structures, Algorithms, AI Fundamentals",
-        "Programming Languages: Python, C++, Java, JavaScript",
-        "Active participant in university coding competitions"
+        "GPA: 3.8",
+        "Relevant Coursework: Deep Learning, NLP, Advanced Algorithms, Operating Systems, Computer Architecture, Computer Networks, Database Systems",
+        "Programming Languages: Python, JavaScript, C, C++, Java, VHDL, SQL, Motoko"
       ],
       icon: <GraduationCap className="h-6 w-6" />,
       gradient: "from-blue-600 to-purple-600"
@@ -31,26 +32,59 @@ const Education = () => {
 
   const certifications = [
     {
-      type: "internship",
-      title: "DEPI Data Analysis Internship",
-      organization: "Digital Egypt Pioneers Initiative",
-      period: "2025",
-      status:"In Progress",
-      description: "Intensive hands-on training in data analysis, visualization, and business intelligence tools.",
-      skills: [ "Power BI", "Excel", "Statistical Analysis"],
+      type: "certification",
+      title: "CCNA",
+      organization: "NTI",
+      period: "2024",
+      status:"Completed",
+      description: "Networking fundamentals and CCNA-level concepts.",
+      skills: [ "Networking", "Routing & Switching"],
       icon: <Briefcase className="h-6 w-6" />,
       gradient: "from-green-500 to-cyan-500"
     },
     {
       type: "certification",
-      title: "AWS Cloud Associate",
+      title: "AWS Cloud Practitioner",
       organization: "Amazon Web Services",
-      period: "2025",
-      status: "In Progress",
-      description: "Comprehensive cloud computing certification covering AWS services, architecture, and best practices.",
-      skills: ["Cloud Computing", "AWS Services", "DevOps", "Infrastructure"],
+      period: "2024",
+      status: "Completed",
+      description: "Foundational cloud computing certification covering AWS services and best practices.",
+      skills: ["Cloud Computing", "AWS Services"],
       icon: <Award className="h-6 w-6" />,
       gradient: "from-orange-500 to-red-500"
+    },
+    {
+      type: "certification",
+      title: "DEPI Data Analysis",
+      organization: "Digital Egypt Pioneers Initiative",
+      period: "2025",
+      status: "Completed",
+      description: "Training in data analysis, visualization, and BI tools.",
+      skills: ["Power BI", "Excel", "Statistical Analysis"],
+      icon: <Briefcase className="h-6 w-6" />,
+      gradient: "from-cyan-400 to-blue-500"
+    },
+    {
+      type: "certification",
+      title: "Embedded Systems Training",
+      organization: "EDGES Academy",
+      period: "2023",
+      status: "Completed",
+      description: "Hands-on embedded systems and microcontroller coursework.",
+      skills: ["Embedded C", "Microcontrollers"],
+      icon: <Briefcase className="h-6 w-6" />,
+      gradient: "from-yellow-400 to-orange-400"
+    },
+    {
+      type: "certification",
+      title: "Full-Stack Web Development Bootcamp",
+      organization: "Udemy",
+      period: "2023",
+      status: "Completed",
+      description: "Comprehensive full-stack web development training.",
+      skills: ["React", "Node.js", "MongoDB"],
+      icon: <Award className="h-6 w-6" />,
+      gradient: "from-purple-400 to-pink-400"
     }
   ];
 

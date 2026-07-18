@@ -14,7 +14,6 @@ const Index = () => {
       <Hero />
       <About />
       <Skills />
-      <Services />
       <Projects />
       <Education />
       <Contact />
@@ -23,7 +22,7 @@ const Index = () => {
       <footer className="bg-primary text-primary-foreground py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm">
-            © 2025 Youssef George. Built with React, TypeScript, and Tailwind CSS.
+            © 2026 Youssef George. Built with React, TypeScript, and Tailwind CSS.
           </p>
         </div>
       </footer>

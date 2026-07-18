@@ -12,54 +12,14 @@ import {
 
 const Skills = () => {
   const skills = [
-    {
-      name: "Python",
-      icon: <Code className="h-8 w-8" />,
-      level: 90,
-      color: "from-blue-500 to-yellow-400"
-    },
-    {
-      name: "JavaScript",
-      icon: <Braces className="h-8 w-8" />,
-      level: 85,
-      color: "from-yellow-400 to-orange-500"
-    },
-    {
-      name: "C++",
-      icon: <Terminal className="h-8 w-8" />,
-      level: 80,
-      color: "from-blue-600 to-purple-600"
-    },
-    {
-      name: "C#",
-      icon: <Hash className="h-8 w-8" />,
-      level: 75,
-      color: "from-purple-500 to-pink-500"
-    },
-    {
-      name: "SQL",
-      icon: <Database className="h-8 w-8" />,
-      level: 85,
-      color: "from-green-400 to-blue-500"
-    },
-    {
-      name: "Power BI",
-      icon: <BarChart3 className="h-8 w-8" />,
-      level: 80,
-      color: "from-yellow-500 to-red-500"
-    },
-    {
-      name: "MS Excel",
-      icon: <FileSpreadsheet className="h-8 w-8" />,
-      level: 90,
-      color: "from-green-500 to-emerald-500"
-    },
-    {
-      name: "Machine Learning",
-      icon: <Cpu className="h-8 w-8" />,
-      level: 75,
-      color: "from-indigo-500 to-purple-600"
-    }
+    { name: "Python", icon: <Code className="h-8 w-8" />, level: 95, color: "from-blue-500 to-sky-400" },
+    { name: "JavaScript", icon: <Braces className="h-8 w-8" />, level: 85, color: "from-yellow-400 to-orange-500" },
+    { name: "C", icon: <Terminal className="h-8 w-8" />, level: 80, color: "from-gray-500 to-slate-700" },
+    { name: "C++", icon: <Terminal className="h-8 w-8" />, level: 85, color: "from-blue-600 to-purple-600" },
+    { name: "Java", icon: <Hash className="h-8 w-8" />, level: 75, color: "from-red-500 to-pink-500" },
+    { name: "VHDL", icon: <Cpu className="h-8 w-8" />, level: 70, color: "from-indigo-500 to-violet-500" },
+    { name: "SQL", icon: <Database className="h-8 w-8" />, level: 85, color: "from-green-400 to-blue-500" },
+    { name: "Motoko", icon: <Braces className="h-8 w-8" />, level: 60, color: "from-cyan-500 to-blue-500" }
   ];
 
   return (
@@ -105,10 +65,7 @@ const Skills = () => {
               Additional Expertise
             </h3>
             <div className="flex flex-wrap justify-center gap-3">
-              {[
-                "React", "Node.js", "Git",  "AWS", 
-                 "Pandas", "NumPy", "Matplotlib"
-              ].map((tech, index) => (
+              {["React", "Node.js", "Git", "AWS", "PyTorch", "HuggingFace", "NumPy", "OpenCV"].map((tech, index) => (
                 <span 
                   key={index}
                   className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium hover:bg-accent/20 transition-colors duration-300"

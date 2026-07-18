@@ -45,10 +45,31 @@ const About = () => {
               </h3>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I believe perseverance is key to solving complex problems. From tackling demanding university projects to building real-world applications, I’ve learned to approach every challenge with determination and focus. My goal is not just to find a solution, but to deliver a high-quality outcome that makes a real impact. With a passion for AI, data analysis, and software engineering, I combine technical expertise and persistence to transform obstacles into opportunities.
+                I’m a Computer and Artificial Intelligence Engineering student with a strong foundation
+                in machine learning, natural language processing, and systems programming. I enjoy
+                building end-to-end solutions — from research-oriented ML models to production-ready
+                web applications — and focus on delivering high-quality, maintainable software.
               </p>
-              
-             
+
+              <div className="grid sm:grid-cols-2 gap-6 mt-6">
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">Soft Skills</h4>
+                  <ul className="text-sm text-muted-foreground list-disc list-inside">
+                    <li>Problem Solving & Critical Thinking</li>
+                    <li>Team Collaboration & Communication</li>
+                    <li>Adaptability & Continuous Learning</li>
+                    <li>Time Management & Working Under Pressure</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">Languages</h4>
+                  <ul className="text-sm text-muted-foreground list-disc list-inside">
+                    <li>Arabic — Native</li>
+                    <li>English — Proficient</li>
+                  </ul>
+                </div>
+              </div>
 
             </div>
 

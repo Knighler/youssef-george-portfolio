@@ -38,51 +38,68 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Online Courses Store Data Analysis",
-      description: "Comprehensive analysis of online course marketplace data, providing insights on pricing strategies, popular categories, and market trends.",
-      icon: <BarChart3 className="h-6 w-6" />,
-      tags: [ "Power BI"],
-      category: "Data Analysis",
-      gradient: "from-green-500 to-cyan-500",
-      demoImage: onlineCoursesImg // image for popup
+      title: "Abstractive Long-Document Summarizer",
+      description: "Fine-tuned PEGASUS transformer with 8-bit QLoRA, structural preprocessing to remove bibliography pollution, and a dual-stage Map-Reduce token-slicing pipeline for long scientific papers. Evaluated with ROUGE and BERTScore.",
+      icon: <Brain className="h-6 w-6" />,
+      tags: ["PyTorch", "HuggingFace", "QLoRA"],
+      category: "NLP / Research",
+      gradient: "from-indigo-500 to-violet-500",
+      codeLink: "https://github.com/Knighler/Abstractive-Summarization-For-Research-Papers"
     },
     {
-      title: "Companies Layoffs Data Analysis",
-      description: "Comprehensive analysis of Layoffs and funds raised for different companies, which provides crucial insights for taking important decisions",
-      icon: <BarChart3 className="h-6 w-6" />,
-      tags: [ "Power BI"],
-      category: "Data Analysis",
-      gradient: "from-green-500 to-cyan-500",
-      demoImage: layoffsImg// image for popup
+      title: "Text-to-Image Latent Diffusion Model",
+      description: "Implemented a DDPM-based text-conditioned diffusion pipeline for 64x64 face synthesis with CLIP conditioning, custom cross-attention layers and classifier-free guidance.",
+      icon: <Globe className="h-6 w-6" />,
+      tags: ["PyTorch", "Diffusion", "CLIP"],
+      category: "Generative Models",
+      gradient: "from-pink-500 to-orange-400",
+      codeLink: "https://github.com/Knighler/UNET-CLIP-Diffusion-Image-Generation"
     },
     {
-      title: "Blog Website",
-      description: "A full-featured personal blog with user authentication, rich text editor, and responsive design. Built with modern web technologies for optimal performance.",
+      title: "Egyptian Financial Advisor (Agentic RAG)",
+      description: "Agentic RAG system providing personalized investment advice using BigQuery for market analytics and Firestore for user profiles; ELT pipeline with Terraform and Kestra and a FastAPI backend with a ReAct agent.",
+      icon: <BarChart3 className="h-6 w-6" />,
+      tags: ["FastAPI", "BigQuery", "LangChain"],
+      category: "Production ML",
+      gradient: "from-green-500 to-teal-400",
+      codeLink: "https://github.com/Knighler/Egyptian-Financial-Advisor"
+    },
+    {
+      title: "Semantic Analyzer for Amazon Reviews",
+      description: "NLP pipeline to classify Amazon reviews combining text and rating signals; includes preprocessing, training, and model evaluation.",
       icon: <BookOpen className="h-6 w-6" />,
-      tags: ["React", "Node.js", "MongoDB", "Authentication"],
-      category: "Web Development",
-      gradient: "from-blue-500 to-purple-600",
-      codeLink: "https://github.com/Knighler/Blog_Custom_API"
+      tags: ["Python", "Pandas", "scikit-learn"],
+      category: "NLP",
+      gradient: "from-blue-500 to-cyan-500",
+      codeLink: "https://github.com/Knighler/Amazon-Sentiment-Analyser"
     },
     {
-      title: "Orrery Solar System Simulation",
-      description: "Interactive 3D visualization of planetary orbits with real astronomical data. Features accurate celestial mechanics and stunning visual effects.",
-      icon: <Globe className="h-6 w-6" />,
-      tags: ["JavaScript", "HTML", "CSS"],
-      category: "Visualization",
-      gradient: "from-orange-500 to-red-500",
-      codeLink: "https://github.com/Knighler/Orerry"
+      title: "Jigsaw Puzzle Automated Solver",
+      description: "Reconstructs images from shuffled square pieces using LAB color differences, gradient continuity, Canny edge alignment, and a multi-start greedy assembly with best-buddy scoring.",
+      icon: <Shuffle className="h-6 w-6" />,
+      tags: ["OpenCV", "Computer Vision"],
+      category: "Computer Vision",
+      gradient: "from-yellow-500 to-amber-500",
+      codeLink: "https://github.com/Knighler/Puzzles-Image-Processing"
     },
-     {
-      title: "Travel Tracker App",
-      description: "Interactive websites where differetn users can use a map to to highlight the places they visted around the worls. Users can sign in with different accounts and each can have a customized page",
+    {
+      title: "Synchronization Networking Protocol",
+      description: "Custom UDP protocol for 2D game synchronization handling packet loss and delays using delta snapshots and selective reliability techniques.",
       icon: <Globe className="h-6 w-6" />,
-      tags: ["JavaScript", "Animation","HTML","CSS"],
+      tags: ["Networking", "Python", "Sockets"],
+      category: "Systems",
+      gradient: "from-gray-600 to-slate-500",
+      codeLink: "https://github.com/Knighler/game-state-sync-protocol"
+    },
+    {
+      title: "Reddit Clone Website",
+      description: "Full-stack social platform replicating Reddit features with an AI-enhanced interactive posting experience.",
+      icon: <ShoppingCart className="h-6 w-6" />,
+      tags: ["Node.js", "Express", "MongoDB"],
       category: "Web Development",
-      gradient: "from-orange-500 to-red-500",
-      codeLink: "https://github.com/Knighler/Travel_Tracker_Map"
+      gradient: "from-blue-500 to-indigo-500",
+      codeLink: "https://github.com/Knighler/Reddit-Clone"
     }
-   
   ];
 
   return (
